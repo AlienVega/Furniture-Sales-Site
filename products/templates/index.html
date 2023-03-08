@@ -1,0 +1,271 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Haydar ÇOBAN">
+    <meta name="description" content="Mobilya Tasarım">
+    <meta name="keyword" content="mobilya,yatak odası,oturma odası,antre mobilyaları,genç ve çocuk odası">
+    <link rel="icon" type="image/png" sizes="16x16"  href="{% static 'products/img/icons8.png' %}">
+    
+    <title>MRF MOBİLYA</title>
+    <link rel="stylesheet" href="{% static 'products/css/custom/extra.css' %}">
+    <style>
+        @import url("{% static 'products/css/all.css' %}");
+    </style>
+    <script src="https://kit.fontawesome.com/49b22bb0c4.js" crossorigin="anonymous"></script>
+     
+    <link rel="stylesheet" href="{% static 'products/css/bootstrap/bootstrap.min.css' %}">
+     
+</head>
+<body>
+  
+   <header>
+      <div class="social-menu ">
+        <ul>
+          <li><a href="https://www.instagram.com/mrfmobilyaa/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div class="wavy  position-absolute text-center w-100">
+        <span style="--i:1;">T</span>
+        <span style="--i:2;">ü</span>
+        <span style="--i:3;">m</span>
+        <span style="--i:4;"> </span>
+        <span style="--i:5;">T</span>
+        <span style="--i:6;">ü</span>
+        <span style="--i:7;">r</span>
+        <span style="--i:8;">k</span>
+        <span style="--i:9;">i</span>
+        <span style="--i:10;">y</span>
+        <span style="--i:11;">e</span>
+        <span style="--i:12;">y</span>
+        <span style="--i:13;">e</span>
+        <span style="--i:14;"> </span>
+        <span style="--i:15;">Ü</span>
+        <span style="--i:16;">C</span>
+        <span style="--i:17;">R</span>
+        <span style="--i:18;">E</span>
+        <span style="--i:19;">T</span>
+        <span style="--i:20;">S</span>
+        <span style="--i:21;">İ</span>
+        <span style="--i:22;">Z</span>
+        <span style="--i:23;"> </span>
+        <span style="--i:24;">T</span>
+        <span style="--i:25;">e</span>
+        <span style="--i:26;">s</span>
+        <span style="--i:27;">l</span>
+        <span style="--i:28;">i</span>
+        <span style="--i:29;">m</span>
+        <span style="--i:30;"> a</span>
+        <span style="--i:31;">t</span>
+        <span style="--i:32;"> </span>
+        <span style="--i:33;">v</span>
+        <span style="--i:34;">e</span>
+        <span style="--i:35;"> </span>
+        <span style="--i:36;">K</span>
+        <span style="--i:37;">u</span>
+        <span style="--i:38;">r</span>
+        <span style="--i:39;">u</span>
+        <span style="--i:40;">l</span>
+        <span style="--i:41;">u</span>
+        <span style="--i:42;">m</span>
+        
+      </div>
+      <div class="telnumber">
+        <div class="d-flex ">
+          <img class="text-white me-2 telicon" src="{% static 'products/img/phone.png' %}" alt="phone">
+          <a class="text-white w-100 d-inline-block telnumber2  " href="tel:05434766027">0(543) 476 60 27</a>
+        </div>
+          <span class="text-white ms-5">Detaylı Bilgi...</span>
+      </div>
+        Tüm Türkiye'ye <b>ÜCRETSİZ</b> Teslimat ve Kurulum
+      </h1> 
+      <img src="{% static 'products/img/homepage.jpg' %}"  class="banner" alt="home-page">
+       
+      <a href="#" class="logo">  MRF MOBİLYA</a>
+      <a href="{% url 'product_home' %}"><button type="button" class="btn btn-danger btn-lg productbtn ">Ürün-Kategori</button></a>
+      
+    <div class="toggle">
+    </div>
+      <nav>
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#services">Hakkımızda</a></li>
+          <li><a href="{% url 'product_home' %}">Ürünler Ve Kategoriler</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </nav>
+   </header>
+   
+   <!-- services start -->
+    <section id="services" class="mySection">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="s-heading  fw-bold">BİZ KİMİZ?</h2>
+          <p class="s-subheading text-muted"> Firmamız, Mobilya sektöründe uzun yılların vermiş olduğu tecrübeyi  iyi şekilde siz müşterilerimize sunmayı hedefliyor...</p>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="bg-danger rounded-circle m-auto text-white justify-content-center align-items-center d-flex" style="width: 8rem; height:8rem;">
+              <i style="font-size:4.5rem;" class="fa-solid fa-heart-circle-check"></i>
+            </div>
+            <h4 class="my-3 fw-bold">Müşteri Memnuniyeti</h4>
+            <p class="text-muted">Müşteri memnuniyeti, bizim için en önemli önceliklerimizden biridir. Müşterilerimizin ihtiyaç ve beklentilerini doğru anlamak, ürünlerimizin kalitesini artırmak ve hizmetlerimizi sürekli geliştirmek için çaba sarf ediyoruz. Satın alma sürecinin her aşamasında müşterilerimize en iyi deneyimi sunmak için çalışıyoruz ve müşteri memnuniyetini sağlamak için elimizden gelen her şeyi yapıyoruz. Müşterilerimizden gelen geri bildirimleri önemsiyor ve daima onların taleplerine uygun hareket ediyoruz.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-danger rounded-circle m-auto text-white justify-content-center align-items-center d-flex" style="width: 8rem; height:8rem;">
+              <i style="font-size:4.5rem;" class="fa-solid fa-cubes"></i>
+            </div>
+            <h4 class="my-3 fw-bold">Duyarlı Tasarım</h4>
+            <p class="text-muted">Her türlü mekan tasarımları için yurt içi müşterilerine özel seçenekler sunmaktayız. Konut, ofis ve oteller başta olmak üzere; restoran, kafe, hastane, fabrika mobilyalarının yanı sıra, müşteri taleplerini karşılayacak kişiye özel üretimlerle, yurt içi ve yurt dışındaki mimarların ve proje sahiplerinin çözüm ortağı olmaktayız.</p>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="bg-danger rounded-circle m-auto text-white justify-content-center align-items-center d-flex" style="width: 8rem; height:8rem;">
+              <i style="font-size:4.5rem;"  class="fa-solid fa-key"></i>
+            </div>
+            <h4 class="my-3 fw-bold">Kalite Güvenliği</h4>
+            <p class="text-muted">Müşterilerimizin güvenliği ve memnuniyeti bizim için en önemli önceliklerimizden biridir. Bu nedenle, satışını yaptığımız mobilyaların kalitesini ve güvenliğini sağlamak için özenle çalışıyoruz. Ürünlerimizi seçerken, kalite standartlarını yüksek tutuyor ve sadece güvenilir tedarikçilerle çalışıyoruz. Ürünlerimiz, üretim sürecinde sıkı denetimlerden geçerek kalite ve güvenlik standartlarına uygunluğunu kanıtlamaktadır. Ayrıca, müşterilerimizin güvenliği için özel ambalajlama ve taşıma yöntemleri kullanıyoruz. Böylece, müşterilerimiz satın aldıkları mobilyaların kalite ve güvenliği konusunda endişe etmeden keyifle kullanabilirler.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- services end -->
+   
+    <!-- product carousel start -->
+    <div class="container-fluid  mb-4  crsl1">
+      <div class="container  ">
+        <div class="text-center mb-5">
+          <h3 class="h3 text-danger fw-bold ">Kişiye Özel Tasarım</h3>
+          <h4 class="h4 text-dark fw-bold">Kendi tasarımını belirle ve iletişime geç...</h4>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static 'products/img/mobilya1.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'products/img/mobilya2.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'products/img/mobilya3.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product carousel end -->
+    <!-- product list start -->
+    <div class="container mb-3 mt-5">
+      <div class="row mt-3 mb-3">
+        <div class="col-md-3">
+          <h3 class="h3 text-start fw-bold text-danger fs-2 mb-5 mt-5 text-center">Ürünler</h3>
+        </div>
+        <div class="col-md-9 overflow-auto ovrf">
+          <h5 class="h5">Mrf Yaşam Alanları</h5>
+          <p class="p">Yaşam alanları, evlerimizin en önemli bölümlerinden biridir. Bu nedenle, müşterilerimizin yaşam alanlarına uygun mobilyalar sunarak, evlerinde daha keyifli ve rahat bir yaşam sürmelerini hedefliyoruz. Sitemizde yer alan mobilya ürünleri, farklı tarzlara, renklere ve boyutlara sahiptir. Kullanım kolaylığı, konfor ve estetik açıdan müşterilerimizin beklentilerini karşılayacak şekilde tasarlanmıştır. Ayrıca, mobilyalarımızın kalitesi ve dayanıklılığı sayesinde, müşterilerimiz uzun yıllar boyunca mobilyalarını sorunsuzca kullanabilirler. Yaşam alanlarının her alanı için uygun mobilyalar sunarak, müşterilerimize evlerinde daha iyi bir yaşam deneyimi sunmayı amaçlıyoruz.</p>
+        </div>
+      </div>
+
+
+      <div class="row mb-4">     
+          {% for blog in posts  %}
+              {% if blog.is_active %}
+                {% include '_product.html' %}
+              {% endif %}
+          {% endfor %}    
+      </div>
+      
+      
+    </div>
+    <!-- product list end -->
+    
+    <!-- contact start -->
+      {% include '_contact.html' %}
+    <!-- contact end -->
+
+    <!-- footer start -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="#" class="logo m-auto fw-bold mt-5 mb-5">MRF MOBİLYA</a>
+                      <div class="footer-about">
+                          <p>Yenilikçi ve benzersiz tasarımlarıyla göz dolduran ürünler Mrf Mobilya'da. Sadeliğin yanı başında canlı renklerin gücü ve modern bir konfor ile Mrf Mobilya. Canlı Destek. %100 Güvenli Alışveriş. </p>
+                      </div>
+					</div>
+					<div class="col-md-3">
+						<div class="useful-link">
+							<h2>Kurumsal</h2>							
+							<div class="use-links">
+								<li><a href="index.html"><i class="fa-solid fa-angles-right"></i> Anasayfa</a></li>
+								<li><a href="#services"><i class="fa-solid fa-angles-right"></i>Hakkımızda</a></li>
+								<li><a href="urun.html"><i class="fa-solid fa-angles-right"></i> Kategoriler</a></li>
+								<li><a href="#contact"><i class="fa-solid fa-angles-right"></i> İletişim</a></li>
+							</div>
+						</div>
+
+					</div>
+                    <div class="col-md-3">
+                        <div class="social-links">
+							<h2>Bizi Takip Et</h2>
+							<div class="social-icons">
+								<li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+								<li><a href="https://www.instagram.com/mrfmobilyaa/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+								<li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
+							</div>
+						</div>
+                 
+
+                    </div>
+					<div class="col-md-3">
+						<div class="address">
+							<h2>Adress</h2>
+							<div class="address-links">
+								
+								   <li><a href=""><i class="fa-solid fa-phone"></i> +90 0543 476 60 27</a></li>
+								   <li><a href=""><i class="fa-solid fa-envelope"></i>marufuzun35@gmail.com</a></li>
+							</div>
+						</div>
+					</div>
+                  
+				</div>
+        
+        
+			</div>
+      
+      {% include '_whatsappcontact.html' %}
+		</footer>
+		<!-- footer end -->
+		<!-- footer copy right section start -->
+		<section id="copy-right ">
+			<div class="copy-right-sec bg-danger"><i class="fa-solid fa-copyright"></i>  
+				2022 MRF TASARIM MOBİLYA
+			</div>
+		</section>
+		<!-- footer copy right section end -->
+      
+    <script src="{% static 'products/js/custom/extra.js'  %}"></script>
+    <script src="{% static 'products/js/custom/wp.js'  %}"></script>
+   <script src="{% static 'products/js/bootstrap/bootstrap.bundle.min.js' %}"> </script>
+   <script>
+    
+    </script>
+</body>
+</html>

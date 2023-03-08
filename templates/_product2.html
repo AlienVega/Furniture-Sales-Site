@@ -1,0 +1,12 @@
+{% load static %}
+
+<div class="col-md-4 mb-3 crop">  
+    <div class="card" style="width: 25rem; height:25rem;">
+      <img src="{{blog.image.url}}" class="card-img-top "  style="object-fit:cover; max-width:25rem; height:20rem;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center fw-bold">{{blog.title|title}}</h5>
+        <h6 class="visually-hidden">{{blog.date|date:'F d Y'}}</h6>  
+        <a href="{% url 'product_details'  blog.slug %}" class="btn btn-danger d-block ">ÜRÜN BİLGİLERİ</a>
+      </div>
+    </div>
+</div>

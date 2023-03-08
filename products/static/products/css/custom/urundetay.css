@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Poppins:wght@200&family=Roboto+Slab:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins' , sans-serif;
+}
+body{
+    background-color:#e6e6e6;
+}
+.logo{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size:5.5vh;
+    color:black;
+    transition:1s;
+    text-decoration:none;
+    height:30px;
+}
+.cont{
+    background-color:#ffffff;
+}
+.links>a{
+    transition: 0.6s;
+}
+.links>a:hover{
+    color:#ff4d4d !important;
+    font-size:19px;
+}
+@media (max-width:991px) {
+    .bigscreen{
+        width:100% !important;
+    }
+    .logo{
+        font-size:3vh !important;
+        margin-top:5px;
+        margin:auto;
+        display:flex;
+    }   
+}
+
+
+
+/* footer start */
+#footer{
+	background: #f7f7f7;
+    padding: 3rem;
+	/* padding-top: 5rem; */
+	padding-top: 7rem;
+    padding-bottom: 80px;
+	background-image: url(https://arena.km.ua/wp-content/uploads/3538533.jpg);
+}
+#footer2{
+	background: #f7f7f7;
+    padding: 3rem;
+    margin-top: 0px;
+	/* padding-top: 5rem; */
+	padding-top: 7rem;
+    padding-bottom: 80px;
+	background-image: url(../images/cards/v748-toon-111.png);
+}
+.logo{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size:6.5vh;
+    color:black;
+    transition:1s;
+    text-decoration:none;
+    height:30px;
+}
+.social-links{
+	/* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+}
+.social-links h2{
+	padding-bottom: 15px;
+	font-size: 20px;
+    font-weight: 600;
+}
+.social-links img{
+	padding-bottom: 25px;
+}
+.social-icons{
+	/* display: flex;
+    gap: 3rem; */
+	display: flex;
+    flex-direction: column;
+    gap: 1rem;
+	color: #777777;
+}
+.social-icons a{
+	/* font-size: 18px; */
+    /* background: #ffffff; */
+    /* box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 3px;
+	color: #82074a; */
+	/* margin-right: 18px; */
+	color: #777777;
+}
+.social-icons a:hover{
+	color: #000;
+}
+.social-icons a i{
+	box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 3px;
+    color: #82074a;
+	font-size: 16px;
+	margin-right: 12px;
+}
+li{
+	list-style: none;
+}
+.useful-link h2{
+	padding-bottom: 15px;
+	font-size: 20px;
+    font-weight: 600;
+}
+.useful-link img{
+	padding-bottom: 15px;
+}
+.use-links{
+	line-height: 32px;
+}
+.use-links li i{
+	font-size: 14px;
+    padding-right: 8px;
+    color: #898989;
+}
+.use-links li a{
+	color: #303030;
+    font-size: 15px;
+    font-weight: 500;
+	color: #777777;
+}
+.use-links li a:hover{
+	color: #000;
+}
+.address h2{
+	padding-bottom: 15px;
+	font-size: 20px;
+    font-weight: 600;
+}
+.address img{
+	padding-bottom: 15px;
+}
+.address-links li a{
+	color: #303030;
+    font-size: 15px;
+    font-weight: 500;
+	color: #777777;
+
+}
+.address-links li i{
+	font-size: 16px;
+    padding-right: 8px;
+	color: #82074a;
+
+}
+.address-links li i:nth-child(1){
+	padding-top: 9px;
+}
+.address-links .address1{
+	font-weight: 500;
+    font-size: 15px;
+	display: flex;
+}
+.address-links{
+	    line-height: 32px;
+		color: #777777;
+}
+.copy-right-sec{
+	padding: 1rem;
+    
+    color: #fff;
+    text-align: center;
+}
+.copy-right-sec a{
+	color: #fcd462;
+    font-weight: 500;
+}
+a{
+  text-decoration:none;
+}
+
+/* footer section end */
+/* image size */
+.proh{
+  max-width:873px;
+  max-height:583px;
+}
+
+
+/* contact start */
+#contact input{
+    padding-top:1.2rem;
+    padding-bottom:2rem;
+}
+#contact .form-textarea{
+    height:92%;
+}
+#contact .form-textarea textarea{
+    height:100%;
+    min-height:10rem;
+}
+#contact .form-control:focus{
+    box-shadow:1px 1px 12px #d8df0b;
+}
+.s-heading{
+    font-size:1.1rem;
+    
+    font-family:"Montserrat",-apple-system,BlinkMacSystemFont,'Segoe UI' ,Roboto Oxygen,Ubuntu,Cantarell,'Open Sans', 'Helvetica Neue' ,sans-serif;
+}
+
+
+

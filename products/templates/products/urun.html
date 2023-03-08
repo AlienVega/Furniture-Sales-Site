@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Haydar ÇOBAN">
+    <meta name="description" content="Mobilya Tasarım">
+    <meta name="keyword" content="mobilya,yatak odası,oturma odası,antre mobilyaları,genç ve çocuk odası">
+    <link rel="icon" type="image/png" sizes="16x16"   href="{% static 'products/img/icons8.png' %}">
+    
+    <title>MRF MOBİLYA ÜRÜN-KATEGORİ</title>
+    <style>
+        @import url("{% static 'products/css/all.css' %}");
+    </style>
+    <script src="https://kit.fontawesome.com/49b22bb0c4.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="{% static 'products/css/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'products/css/custom/urun.css' %}">
+    <!-- <link rel="stylesheet" href="css/custom/extra.css"> -->
+</head>
+<body>
+  <div class="container-fluid g-0"> 
+    <div class="container cont mb-5 ">
+      <header>
+        <div class="d-flex ">
+          <a href="{% url 'product_home'%}" class="logo m-auto fw-bold mt-1 mb-5 mt-3">MRF MOBİLYA</a>
+        </div>
+        <div class="row">
+          <div class="d-flex justify-content-end ">
+            {% include '_search.html' %}
+          </div>
+          </div>
+        <div>
+           <hr>
+        </div>
+      </header>
+        <nav class="navbar navbar-expand-lg  mb-5"  id="navstcky">
+          <div class="container ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+              <div class="navbar-nav text-capitalize links">
+                    {% include '_categories.html' %}                       
+              </div>
+            </div>
+          </div>
+    </nav>
+      
+      
+      <!-- product start -->
+      <div class="row mb-5 mt-4  ">
+        {% for blog in blogs  %}
+            {% include '_product2.html' %}
+        {% endfor %}
+      </div>
+      
+    </div>
+      <!-- product end -->
+    <!-- contact start -->
+    {% include '_contact.html' %}
+    <!-- contact end -->
+      
+      <!-- footer start -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="#" class="logo m-auto fw-bold mt-5 mb-5">MRF MOBİLYA</a>
+                      <div class="footer-about">
+                          <p>Yenilikçi ve benzersiz tasarımlarıyla göz dolduran ürünler Mrf Mobilya'da. Sadeliğin yanı başında canlı renklerin gücü ve modern bir konfor ile Mrf Mobilya. Canlı Destek. %100 Güvenli Alışveriş. </p>
+                      </div>
+					</div>
+					<div class="col-md-3">
+						<div class="useful-link">
+							<h2>Kurumsal</h2>							
+							<div class="use-links">
+								<li><a href="{% url 'index' %}"><i class="fa-solid fa-angles-right"></i> Anasayfa</a></li>
+								<li><a href="#services"><i class="fa-solid fa-angles-right"></i>Hakkımızda</a></li>
+								<li><a href="urun.html"><i class="fa-solid fa-angles-right"></i> Kategoriler</a></li>
+								<li><a href="#contact"><i class="fa-solid fa-angles-right"></i> İletişim</a></li>
+							</div>
+						</div>
+
+					</div>
+          <div class="col-md-3">
+            <div class="social-links">
+							<h2>Bizi Takip Et</h2>
+						<div class="social-icons">
+                <li><a href="https://www.instagram.com/mrfmobilyaa/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+								<li><a href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+								<li><a href=""><i class="fa fa-youtube"></i> Youtube</a></li>
+							</div>
+						</div>
+          </div>
+					<div class="col-md-3">
+						<div class="address">
+							<h2>Adress</h2>
+							<div class="address-links">
+								
+								   <li><a href="tel:05434766027"><i class="fa-solid fa-phone"></i> +90 0543 476 60 27</a></li>
+								   <li><a href="mailto:hydr.cbn@gmail.com"><i class="fa-solid fa-envelope"></i>marufuzun35@gmail.com</a></li>
+							</div>
+						</div>
+					</div>    
+				</div>
+			</div>
+      {% include '_whatsappcontact.html' %}
+		</footer>
+    <!-- footer end -->
+  </div>
+  
+
+
+  <script src="{% static 'products/js/custom/urun.js' %}"></script>
+  <script src="{% static 'products/js/custom/wp.js'  %}"></script>
+  <script src="{% static 'products/js/bootstrap/bootstrap.bundle.min.js' %}"> </script>
+</body>
+</html>

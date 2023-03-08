@@ -1,0 +1,17 @@
+{% load static %}
+
+    {% for category in categories %}
+        {% if category.slug == selected_category %}
+            <li class="list-group">
+                <a href="{% url 'blogs_by_category' category.slug %}" class="nav-link  fw-bold text-dark mx-2 border border-3 border-danger rounded-pill">{{category.name|title}}</a>
+            </li>
+        {% else %}
+            <li class="list-group">
+                <a href="{% url 'blogs_by_category' category.slug %}" class="nav-link fw-bold text-dark mx-2 ">{{category.name|title}}</a>
+            </li>
+        {% endif %}
+
+    {% endfor %}
+
+    
+    

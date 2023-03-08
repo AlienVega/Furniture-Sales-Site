@@ -1,0 +1,89 @@
+{% load static %}
+<!-- <div class="row mb-4">
+    <div class="col-md-4 crop">
+      <img src="{% static 'products/img/mobilya4.jpg' %} " class="img-fluid " alt="mobilya">
+      <div class="procrop">
+        <a class="tex" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+      </div>
+      <h4 class="h5 mt-3 fw-bold text-center">ÜRÜNÜN CİNSİ KOLTUK TAKIMI</h4>
+    </div>
+    <div class="col-md-4 crop">
+      <img src="{% static 'products/img/mobilya2.jpg' %}" class="img-fluid" alt="mobilya">
+      <div class="procrop">
+        <a class="tex" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+      </div>
+      <h4 class="h5 mt-3 fw-bold text-center">ÜRÜNÜN CİNSİ SALON TAKIMI</h4>
+    </div>
+    <div class="col-md-4 crop">
+      <img src="{% static 'products/img/mobilya.jpg' %}" class="img-fluid" alt="mobilya">
+      <div class="procrop">
+        <a class="tex" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+      </div>
+      <h4 class="h5 mt-3 fw-bold text-center">ÜRÜNÜN CİNSİ MUTFAK TAKIMI</h4>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-md-4 crop">
+      <img src="{% static 'products/img/mobilya4.jpg' %}" class="img-fluid" alt="mobilya">
+      <div class="procrop">
+        <a class="tex" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+      </div>
+      <h4 class="h5 mt-3 fw-bold text-center">ÜRÜNÜN CİNSİ KOLTUK TAKIMI</h4>
+    </div>
+    <div class="col-md-4 crop">
+      <img src="{% static 'products/img/mobilya2.jpg' %}" class="img-fluid" alt="mobilya">
+      <div class="procrop">
+        <a class="tex" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+      </div>
+      <h4 class="h5 mt-3 fw-bold text-center">ÜRÜNÜN CİNSİ SALON TAKIMI</h4>
+    </div>
+    <div class="col-md-4 crop">
+      <img src="{% static 'products/img/mobilya.jpg' %}" class="img-fluid" alt="mobilya">
+      <div class="procrop">
+        <a class="tex" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+      </div>
+      <h4 class="h5 mt-3 fw-bold text-center">ÜRÜNÜN CİNSİ MUTFAK TAKIMI</h4>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-md-4 crop">
+      <img src="{% static 'products/img/mobilya4.jpg' %}" class="img-fluid" alt="mobilya">
+      <div class="procrop">
+        <a class="tex" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+      </div>
+      <h4 class="h5 mt-3 fw-bold text-center">ÜRÜNÜN CİNSİ KOLTUK TAKIMI</h4>
+    </div>
+    <div class="col-md-4 crop">
+      <img src="{% static 'products/img/mobilya2.jpg' %}" class="img-fluid" alt="mobilya">
+      <div class="procrop">
+        <a class="tex" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+      </div>
+      <h4 class="h5 mt-3 fw-bold text-center">ÜRÜNÜN CİNSİ SALON TAKIMI</h4>
+    </div>
+    <div class="col-md-4 crop">
+      <img src="{% static 'products/img/mobilya.jpg' %}" class="img-fluid" alt="mobilya">
+      <div class="procrop">
+        <a class="tex" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+      </div>
+      <h4 class="h5 mt-3 fw-bold text-center">ÜRÜNÜN CİNSİ MUTFAK TAKIMI</h4>
+    </div>
+  </div> -->
+<!-- {% comment %}     
+    <div class="col-md-4 crop">
+        <img src="{{blog.image.url}} " class="img-fluid " alt="mobilya">
+        <div class="procrop">
+            <a class="text" href="{% url 'product_home' %}"><button class="crops">Keşfet <i class="fa-solid fa-angle-right"></i></button></a>
+        </div>
+        <h4 class="h5 mt-3 fw-bold text-center">{{blog.title}}</h4>
+    </div>  
+{% endcomment %} -->
+<div class="col-md-4 mb-3 crop">  
+  <div class="card" style="width: 25rem; height:25rem;">
+    <img src="{{blog.image.url}}" class="card-img-top "  style="object-fit:cover; max-width:25rem; height:20rem;" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center fw-bold">{{blog.title|title}}</h5>
+      <h6 class="visually-hidden">{{blog.date|date:'F d Y'}}</h6>   
+      <a href="{% url 'product_home'  %}" class="btn btn-danger d-block ">KEŞFET</a>
+    </div>
+  </div>
+</div>

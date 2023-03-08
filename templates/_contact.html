@@ -1,0 +1,68 @@
+
+<section id="contact" class="mySection mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="s-heading text-uppercase text-danger fw-bold">İLETİŞİM</h2>
+            <h3 class="s-subheading text-muted">Sitemizde bulunan iletişim formu, müşterilerimizin bizimle iletişim kurmaları için kolay ve hızlı bir yöntemdir. Forma, müşterilerimiz ad, soyad, e-posta adresi ve iletişim mesajı gibi bilgileri doldurarak bize ulaşabilirler. Gönderilen mesajlar, müşteri memnuniyeti ve ihtiyaçları doğrultusunda yanıtlanır ve en kısa sürede çözüme kavuşturulur.</h3>
+        </div>
+        <form class="needs-validation"  id="FrmContact" novalidate method="post">
+            
+            {% csrf_token %}
+            <div class="row align-items strech mb-5">
+                <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="İsim Ve Soyisim" required maxlength="40" aria-describedby="ErrName">
+                        <label for="name">İsim Ve Soyisim
+                            <span class="text-danger" aria-hidden="true">*</span>
+                            <span class="visually-hidden">zorunlu alan</span>
+                        </label>
+                        <div class="invalid-feedback fw-bold fts-italic fs-6" id="ErrName"></div>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="E-posta" required maxlength="40" aria-describedby="ErrEmail">
+                        <label for="email">E posta adresiniz
+                            <span class="text-danger" aria-hidden="true">*</span>
+                            <span class="visually-hidden">zorunlu alan</span>
+                        </label>
+                        <div class="invalid-feedback fw-bold fts-italic fs-6" id="ErrEmail"></div>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="tel"  name="tel" id="phone" class="form-control" placeholder="Telefon" required maxlength="20" aria-describedby="ErrPhone">
+                        <label for="tel">Telefon numaranız
+                            <span class="text-danger" aria-hidden="true">*</span>
+                            <span class="visually-hidden">zorunlu alan</span>
+                        </label>
+                        <div class="invalid-feedback fw-bold fts-italic fs-6" id="ErrPhone"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating form-textarea mb-md-0">
+                        <textarea name="textarea" id="message" class="form-control" placeholder="Mesajınız (en az 10 karakter)" required maxlength="300" aria-describedby="ErrMessage"></textarea>
+                        <label for="message">Mesajınız (en az 10 karakter)
+                            <span class="text-danger" aria-hidden="true">*</span>
+                            <span class="visually-hidden">zorunlu alan</span>
+                        </label>
+                        <div class="invalid-feedback fw-bold fts-italic fs-6" id="ErrMessage"></div>
+                    </div>
+                    <div class="text-white text-end">
+                        <span id="current-character">0</span>
+                        <span>/</span>
+                        <span id="last-character"> 300</span>
+                    </div>
+                </div>
+                </div>
+            <div class="text-center">
+                <button id="BtnContact" type="submit" class=" w-100 btn btn-danger btn-lg text-uppercase py-3">mesaj gönder</button>
+            </div>
+        </form>
+    </div>
+  </section>
+
+{% if alert == 'show' %}
+  <script>
+function myFunction() {
+  alert("Mesajınız Gönderildi!");
+}
+myFunction()
+  </script>
+{% endif %}
