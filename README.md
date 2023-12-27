@@ -1,5 +1,5 @@
 
-* PROJE HAKKINDA *
+# PROJE HAKKINDA 
 Html Css Bootstrap Javascript Python-Django teknolojilerini kullanarak geliştirilmiştir.
 
 Admin yönetim panelinden Kullanıcı, Alt kullanıcı , Ürün Kategori , Kategoriye bağlı ürün bilgileri yüklenebilir.
@@ -8,7 +8,7 @@ Sayfa üzerinde ürün bilgileri , ürün detay , kategoriye bağlı ürünler ,
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-* PROJEYİ ÇALIŞTIRMA *
+# PROJEYİ ÇALIŞTIRMA 
 
 Dosyayı loacal'e indirdiğinizde ana dizin üzerindeyken terminali açın ve şu komutu yazın:
 
