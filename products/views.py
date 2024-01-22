@@ -17,7 +17,7 @@ def gonder(request):
         subject = 'Contact Form'
         message = f'Name: {name}\nEmail: {email}\n\nMessage:{message}\ntel:{tel}'
         from_email = settings.EMAIL_HOST_USER
-        recipient_list = ['marufuzun35@gmail.com']
+        recipient_list = ['hydr.cbn@gmail.com']
         
         send_mail(subject, message, from_email, recipient_list)
 
@@ -41,7 +41,7 @@ def gonderdet(request,slug):
             'Konu',
             html_content,
             settings.DEFAULT_FROM_EMAIL,
-            ['marufuzun35@gmail.com'],
+            ['deneme@gmail.com'],
             reply_to=[email],
             headers={'Message-ID': 'foo'},
         )
